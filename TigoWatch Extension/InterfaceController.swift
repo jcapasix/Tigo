@@ -63,19 +63,21 @@ class InterfaceController: WKInterfaceController {
 
 extension InterfaceController: WCSessionDelegate{
     
-    
-    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        print("function:\(#function)")
+        if let error = error {
+            print("WC Session activation failed with error: \(error.localizedDescription)")
+            return
+        }
+        print("WC Session activated with state: \(activationState.rawValue)")
     }
-    
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         print("function:\(#function)")
-        print("Message: \(message)")
-        self.groupColor.setBackgroundColor(UIColor.blue)
-        WKInterfaceDevice().play(.click)
-    }
-    
-    
+
+        DispatchQueue.main.async {
+            print("message: \(message)")
+            self.groupColor.setBackgroundColor(UIColor.blue)
+            WKInterfaceDevice().play(.click)
+        }
+    } 
 }
