@@ -13,8 +13,58 @@
 		50EF156A209CC23100A184F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EF1569209CC23100A184F4 /* Assets.xcassets */; };
 		50EF156D209CC23100A184F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EF156B209CC23100A184F4 /* LaunchScreen.storyboard */; };
 		50EF1575209CC4C300A184F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50EF1574209CC4C300A184F4 /* GoogleService-Info.plist */; };
+		50EF157C209CC55000A184F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EF157A209CC55000A184F4 /* Interface.storyboard */; };
+		50EF157E209CC55100A184F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EF157D209CC55100A184F4 /* Assets.xcassets */; };
+		50EF1585209CC55100A184F4 /* TigoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 50EF1584209CC55100A184F4 /* TigoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50EF158A209CC55100A184F4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF1589209CC55100A184F4 /* InterfaceController.swift */; };
+		50EF158C209CC55100A184F4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF158B209CC55100A184F4 /* ExtensionDelegate.swift */; };
+		50EF158E209CC55100A184F4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF158D209CC55100A184F4 /* NotificationController.swift */; };
+		50EF1590209CC55100A184F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EF158F209CC55100A184F4 /* Assets.xcassets */; };
+		50EF1595209CC55100A184F4 /* TigoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 50EF1578209CC55000A184F4 /* TigoWatch.app */; };
 		AC3A07C24B93FD0F02B50758 /* Pods_Tigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5D6D275D5BFACD23EA80D4 /* Pods_Tigo.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50EF1586209CC55100A184F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EF1557209CC22F00A184F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50EF1583209CC55100A184F4;
+			remoteInfo = "TigoWatch Extension";
+		};
+		50EF1593209CC55100A184F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EF1557209CC22F00A184F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50EF1577209CC55000A184F4;
+			remoteInfo = TigoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		50EF1599209CC55100A184F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				50EF1585209CC55100A184F4 /* TigoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF159D209CC55100A184F4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				50EF1595209CC55100A184F4 /* TigoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C8F50C044274F92A6362642 /* Pods-Tigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tigo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tigo/Pods-Tigo.release.xcconfig"; sourceTree = "<group>"; };
@@ -27,6 +77,17 @@
 		50EF156C209CC23100A184F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50EF156E209CC23100A184F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50EF1574209CC4C300A184F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		50EF1578209CC55000A184F4 /* TigoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TigoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EF157B209CC55000A184F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		50EF157D209CC55100A184F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50EF157F209CC55100A184F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50EF1584209CC55100A184F4 /* TigoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TigoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50EF1589209CC55100A184F4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		50EF158B209CC55100A184F4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		50EF158D209CC55100A184F4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		50EF158F209CC55100A184F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50EF1591209CC55100A184F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50EF1592209CC55100A184F4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		83E841274C383307DD7EC1C2 /* Pods-Tigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tigo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tigo/Pods-Tigo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -36,6 +97,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3A07C24B93FD0F02B50758 /* Pods_Tigo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF1581209CC55100A184F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				50EF1561209CC22F00A184F4 /* Tigo */,
+				50EF1579209CC55000A184F4 /* TigoWatch */,
+				50EF1588209CC55100A184F4 /* TigoWatch Extension */,
 				50EF1560209CC22F00A184F4 /* Products */,
 				3B9AD370E8E0AF872CD031EF /* Pods */,
 				2AA4B167C5FCB3A1E746A122 /* Frameworks */,
@@ -73,6 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				50EF155F209CC22F00A184F4 /* Tigo.app */,
+				50EF1578209CC55000A184F4 /* TigoWatch.app */,
+				50EF1584209CC55100A184F4 /* TigoWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +163,29 @@
 			path = Tigo;
 			sourceTree = "<group>";
 		};
+		50EF1579209CC55000A184F4 /* TigoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				50EF157A209CC55000A184F4 /* Interface.storyboard */,
+				50EF157D209CC55100A184F4 /* Assets.xcassets */,
+				50EF157F209CC55100A184F4 /* Info.plist */,
+			);
+			path = TigoWatch;
+			sourceTree = "<group>";
+		};
+		50EF1588209CC55100A184F4 /* TigoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				50EF1589209CC55100A184F4 /* InterfaceController.swift */,
+				50EF158B209CC55100A184F4 /* ExtensionDelegate.swift */,
+				50EF158D209CC55100A184F4 /* NotificationController.swift */,
+				50EF158F209CC55100A184F4 /* Assets.xcassets */,
+				50EF1591209CC55100A184F4 /* Info.plist */,
+				50EF1592209CC55100A184F4 /* PushNotificationPayload.apns */,
+			);
+			path = "TigoWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,15 +198,51 @@
 				50EF155C209CC22F00A184F4 /* Frameworks */,
 				50EF155D209CC22F00A184F4 /* Resources */,
 				59773618E003DA243ADF7ACE /* [CP] Embed Pods Frameworks */,
+				50EF159D209CC55100A184F4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				50EF1594209CC55100A184F4 /* PBXTargetDependency */,
 			);
 			name = Tigo;
 			productName = Tigo;
 			productReference = 50EF155F209CC22F00A184F4 /* Tigo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		50EF1577209CC55000A184F4 /* TigoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EF159A209CC55100A184F4 /* Build configuration list for PBXNativeTarget "TigoWatch" */;
+			buildPhases = (
+				50EF1576209CC55000A184F4 /* Resources */,
+				50EF1599209CC55100A184F4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50EF1587209CC55100A184F4 /* PBXTargetDependency */,
+			);
+			name = TigoWatch;
+			productName = TigoWatch;
+			productReference = 50EF1578209CC55000A184F4 /* TigoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		50EF1583209CC55100A184F4 /* TigoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50EF1596209CC55100A184F4 /* Build configuration list for PBXNativeTarget "TigoWatch Extension" */;
+			buildPhases = (
+				50EF1580209CC55100A184F4 /* Sources */,
+				50EF1581209CC55100A184F4 /* Frameworks */,
+				50EF1582209CC55100A184F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TigoWatch Extension";
+			productName = "TigoWatch Extension";
+			productReference = 50EF1584209CC55100A184F4 /* TigoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,6 +255,12 @@
 				ORGANIZATIONNAME = "Jordan Capa";
 				TargetAttributes = {
 					50EF155E209CC22F00A184F4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					50EF1577209CC55000A184F4 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					50EF1583209CC55100A184F4 = {
 						CreatedOnToolsVersion = 9.3;
 					};
 				};
@@ -142,6 +279,8 @@
 			projectRoot = "";
 			targets = (
 				50EF155E209CC22F00A184F4 /* Tigo */,
+				50EF1577209CC55000A184F4 /* TigoWatch */,
+				50EF1583209CC55100A184F4 /* TigoWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +294,23 @@
 				50EF1575209CC4C300A184F4 /* GoogleService-Info.plist in Resources */,
 				50EF156A209CC23100A184F4 /* Assets.xcassets in Resources */,
 				50EF1568209CC22F00A184F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF1576209CC55000A184F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EF157E209CC55100A184F4 /* Assets.xcassets in Resources */,
+				50EF157C209CC55000A184F4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EF1582209CC55100A184F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EF1590209CC55100A184F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +367,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50EF1580209CC55100A184F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50EF158E209CC55100A184F4 /* NotificationController.swift in Sources */,
+				50EF158C209CC55100A184F4 /* ExtensionDelegate.swift in Sources */,
+				50EF158A209CC55100A184F4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50EF1587209CC55100A184F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50EF1583209CC55100A184F4 /* TigoWatch Extension */;
+			targetProxy = 50EF1586209CC55100A184F4 /* PBXContainerItemProxy */;
+		};
+		50EF1594209CC55100A184F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50EF1577209CC55000A184F4 /* TigoWatch */;
+			targetProxy = 50EF1593209CC55100A184F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		50EF1566209CC22F00A184F4 /* Main.storyboard */ = {
@@ -228,6 +407,14 @@
 				50EF156C209CC23100A184F4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		50EF157A209CC55000A184F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50EF157B209CC55000A184F4 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -385,6 +572,88 @@
 			};
 			name = Release;
 		};
+		50EF1597209CC55100A184F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				INFOPLIST_FILE = "TigoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		50EF1598209CC55100A184F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				INFOPLIST_FILE = "TigoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		50EF159B209CC55100A184F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				IBSC_MODULE = TigoWatch_Extension;
+				INFOPLIST_FILE = TigoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		50EF159C209CC55100A184F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				IBSC_MODULE = TigoWatch_Extension;
+				INFOPLIST_FILE = TigoWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -402,6 +671,24 @@
 			buildConfigurations = (
 				50EF1572209CC23100A184F4 /* Debug */,
 				50EF1573209CC23100A184F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50EF1596209CC55100A184F4 /* Build configuration list for PBXNativeTarget "TigoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50EF1597209CC55100A184F4 /* Debug */,
+				50EF1598209CC55100A184F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50EF159A209CC55100A184F4 /* Build configuration list for PBXNativeTarget "TigoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50EF159B209CC55100A184F4 /* Debug */,
+				50EF159C209CC55100A184F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
