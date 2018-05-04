@@ -12,9 +12,12 @@
 		50EF1568209CC22F00A184F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EF1566209CC22F00A184F4 /* Main.storyboard */; };
 		50EF156A209CC23100A184F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50EF1569209CC23100A184F4 /* Assets.xcassets */; };
 		50EF156D209CC23100A184F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50EF156B209CC23100A184F4 /* LaunchScreen.storyboard */; };
+		AC3A07C24B93FD0F02B50758 /* Pods_Tigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5D6D275D5BFACD23EA80D4 /* Pods_Tigo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C8F50C044274F92A6362642 /* Pods-Tigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tigo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tigo/Pods-Tigo.release.xcconfig"; sourceTree = "<group>"; };
+		4B5D6D275D5BFACD23EA80D4 /* Pods_Tigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EF155F209CC22F00A184F4 /* Tigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50EF1562209CC22F00A184F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50EF1564209CC22F00A184F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		50EF1569209CC23100A184F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50EF156C209CC23100A184F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50EF156E209CC23100A184F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E841274C383307DD7EC1C2 /* Pods-Tigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tigo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tigo/Pods-Tigo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3A07C24B93FD0F02B50758 /* Pods_Tigo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA4B167C5FCB3A1E746A122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B5D6D275D5BFACD23EA80D4 /* Pods_Tigo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B9AD370E8E0AF872CD031EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83E841274C383307DD7EC1C2 /* Pods-Tigo.debug.xcconfig */,
+				2C8F50C044274F92A6362642 /* Pods-Tigo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		50EF1556209CC22F00A184F4 = {
 			isa = PBXGroup;
 			children = (
 				50EF1561209CC22F00A184F4 /* Tigo */,
 				50EF1560209CC22F00A184F4 /* Products */,
+				3B9AD370E8E0AF872CD031EF /* Pods */,
+				2AA4B167C5FCB3A1E746A122 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50EF1571209CC23100A184F4 /* Build configuration list for PBXNativeTarget "Tigo" */;
 			buildPhases = (
+				BF50CFEAF62857EB9B533F18 /* [CP] Check Pods Manifest.lock */,
 				50EF155B209CC22F00A184F4 /* Sources */,
 				50EF155C209CC22F00A184F4 /* Frameworks */,
 				50EF155D209CC22F00A184F4 /* Resources */,
+				59773618E003DA243ADF7ACE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59773618E003DA243ADF7ACE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tigo/Pods-Tigo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tigo/Pods-Tigo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF50CFEAF62857EB9B533F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tigo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50EF155B209CC22F00A184F4 /* Sources */ = {
@@ -278,14 +345,13 @@
 		};
 		50EF1572209CC23100A184F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E841274C383307DD7EC1C2 /* Pods-Tigo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = Tigo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +361,13 @@
 		};
 		50EF1573209CC23100A184F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C8F50C044274F92A6362642 /* Pods-Tigo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
 				INFOPLIST_FILE = Tigo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcapasix.Tigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
